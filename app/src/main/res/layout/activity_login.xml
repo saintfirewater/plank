@@ -31,7 +31,7 @@
                 android:gravity="center"
                 android:background="@drawable/login_button_corner"
                 android:text="Facebook으로 로그인하기"
-                android:textColor="@color/colorLoginWithFacebook"
+                android:textColor="@color/colorDarkSkyBlue"
                 android:textSize="18sp"
                 android:fontFamily="sans-serif"
                 android:letterSpacing="-0.01"
