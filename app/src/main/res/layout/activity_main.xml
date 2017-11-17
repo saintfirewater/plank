@@ -11,7 +11,7 @@
 
         <include
             android:id="@+id/main_bar"
-            layout="@layout/bar_main" />
+            layout="@layout/top_bar_main" />
         
         <include
             android:layout_height="wrap_content"
