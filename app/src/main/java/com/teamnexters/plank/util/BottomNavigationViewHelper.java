@@ -38,16 +38,7 @@ public class BottomNavigationViewHelper {
                 //set once again checked value, so view will be updated
                 //noinspection RestrictedApi
                 item.setChecked(item.getItemData().isChecked());
-//                Field mIcon = item.getClass().getDeclaredField("mIcon");
-//                Field mTopMargin = item.getClass().getDeclaredField("mDefaultMargin");
-//                Field mScaleDownFactor = item.getClass().getDeclaredField("mScaleDownFactor");
-//
-//                FrameLayout.LayoutParams iconParams = (FrameLayout.LayoutParams) item.getLayoutParams();
-//
-//                iconParams.gravity = Gravity.CENTER_HORIZONTAL | Gravity.TOP;
-//                iconParams.topMargin = mTopMargin.getInt(item);
-//
-//                item.setLayoutParams(iconParams);
+
             }
         } catch (NoSuchFieldException e) {
             Log.e("BNVHelper", "Unable to get shift mode field", e);

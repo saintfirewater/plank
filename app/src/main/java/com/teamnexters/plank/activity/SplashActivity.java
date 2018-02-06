@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.teamnexters.plank.R;
 import com.teamnexters.plank.databinding.ActivitySplashBinding;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 import static com.teamnexters.plank.util.CommonConstants.ONE_SECOND;
 
@@ -19,7 +23,8 @@ import static com.teamnexters.plank.util.CommonConstants.ONE_SECOND;
  */
 
 public class SplashActivity extends Activity{
-    ActivitySplashBinding activitySplashBinding;
+    @BindView(R.id.splash_icon)
+    ImageView splashIcon;
 
     Handler handler;
     Runnable runnable = new Runnable() {
@@ -35,16 +40,18 @@ public class SplashActivity extends Activity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        activitySplashBinding = DataBindingUtil.setContentView(this, R.layout.activity_splash);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
-
-        Glide.with(this).load(R.drawable.mainicon).into(activitySplashBinding.splashIcon);
+        setContentView(R.layout.activity_splash);
+        setView();
 
         createHandler();
         handler.postDelayed(runnable, ONE_SECOND);
+    }
+
+    public void setView() {
+        ButterKnife.bind(this);
+        Glide.with(this).load(R.drawable.mainicon).into(splashIcon);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     public void createHandler() {

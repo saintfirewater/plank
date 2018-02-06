@@ -1,66 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.teamnexters.plank.activity.LoginActivity">
-        
-        <RelativeLayout
-            android:id="@+id/login_top"
-            android:layout_width="match_parent"
-            android:layout_height="361dp">
-            <ImageView
-                android:id="@+id/login_logo"
-                android:layout_width="227dp"
-                android:layout_height="47dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="160dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="279dp"
-            android:layout_below="@id/login_top"
-            android:background="@drawable/login_gradient_shape">
-            <TextView
-                android:id="@+id/login_withfacebook"
-                android:layout_width="320dp"
-                android:layout_height="56dp"
-                android:layout_marginTop="71dp"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:background="@drawable/login_button_corner"
-                android:text="Facebook으로 로그인하기"
-                android:textColor="@color/colorDarkSkyBlue"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif"
-                android:letterSpacing="-0.01"
-                />
-            <TextView
-                android:id="@+id/login_signupplank"
-                android:layout_width="320dp"
-                android:layout_height="56dp"
-                android:layout_marginTop="135dp"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:background="@drawable/login_button_corner_blue"
-                android:text="PLANK에 가입하기"
-                android:textColor="@color/colorWhite"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif"
-                android:letterSpacing="-0.01"/>
-            <TextView
-                android:id="@+id/login_signin"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="226dp"
-                android:layout_centerHorizontal="true"
-                android:text="로그인"
-                android:textColor="@color/colorWhite"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif"
-                android:letterSpacing="-0.01"/>
-        </RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teamnexters.plank.activity.LoginActivity">
 
+    <RelativeLayout
+        android:id="@+id/login_top"
+        android:layout_width="match_parent"
+        android:layout_height="361dp">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="227dp"
+            android:layout_height="47dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp" />
     </RelativeLayout>
-</layout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_below="@id/login_top"
+        android:background="@drawable/login_gradient_shape">
+
+        <TextView
+            android:id="@+id/login_withfacebook"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:background="@drawable/login_button_corner"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:letterSpacing="-0.01"
+            android:text="Facebook으로 로그인하기"
+            android:textColor="@color/colorDarkSkyBlue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/login_signupplank"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/login_button_corner_blue"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:letterSpacing="-0.01"
+            android:text="PLANK에 가입하기"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/login_signin"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="226dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="-0.01"
+            android:text="로그인"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/activity_splash"
-        >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/splash_icon"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="228dp"
-            android:layout_width="140dp"
-            android:layout_height="180dp" />
+    <ImageView
+        android:id="@+id/splash_icon"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp" />
 
-    </RelativeLayout>
-</layout>
+</RelativeLayout>
